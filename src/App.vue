@@ -70,6 +70,13 @@
               @click.stop="confirmToDeleteTodoList(currentTodoList)"
               title="Delete this TODO list"
             ></ElButton>
+            <ElButton
+              size="large"
+              circle
+              :icon="IconClose"
+              @click.stop="currentTask = null; currentTodoList = null;"
+              title="Close panel"
+            ></ElButton>
           </div>
           <div
             v-if="currentTodoList.tasks.length == 0"
