@@ -135,7 +135,7 @@
             <ElButton
               circle
               :icon="IconClose"
-              @click.stop="currentTask.value = null"
+              @click.stop="currentTask = null"
               title="Close panel"
             ></ElButton>
           </div>
